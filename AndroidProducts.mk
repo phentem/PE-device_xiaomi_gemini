@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_gemini.mk
+    $(LOCAL_DIR)/spark_gemini.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_gemini-user \
-    aosp_gemini-userdebug \
-    aosp_gemini-eng
+    spark_gemini-user \
+    spark_gemini-userdebug \
+    spark_gemini-eng
