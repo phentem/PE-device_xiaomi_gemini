@@ -18,15 +18,17 @@
 # Inherit from gemini device
 $(call inherit-product, device/xiaomi/gemini/device.mk)
 
-# Inherit some common PixelExperience stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common XD stuff.
+$(call inherit-product, vendor/xdroid/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
+XDROID_BOOT_DARK := true
+XDROID_UI_BLUR := true
 
 #GApps
 TARGET_GAPPS_ARCH := arm64
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_gemini
+PRODUCT_NAME := xdroid_gemini
 PRODUCT_DEVICE := gemini
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 5
